@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from model import OCRModel
+from src.model import OCRModel
 
 def train_model(dataset, epochs=10, batch_size=32, lr=0.001):
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
